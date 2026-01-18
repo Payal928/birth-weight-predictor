@@ -45,7 +45,7 @@ def predict():
     data_df = pd.DataFrame(clean_data_babay)
 
     # load ml model
-    with open('ml_model/model.pkl' , 'rb') as obj:
+    with open('model.pkl' , 'rb') as obj:
         model = pickle.load(obj)
 
     # predict weight 
